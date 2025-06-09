@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite;
 
 namespace MauiTempoAgoraSQLite.Models
 {
     public class Tempo
     {
+        [PrimaryKey, AutoIncrement]
         public double? lon {  get; set; }
         public double? lat { get; set; }
         public double? temp_min { get; set; }
